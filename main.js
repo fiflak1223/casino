@@ -16,7 +16,7 @@ function spin() {
     secondNumb.style.transitionDuration = "7s";
     thirdNumb.style.transitionDuration = "7s";
     cas.style.transitionDuration = "7s";
-    
+
     firstNumb.style.transform = `translate(0, ${f})`;
     firstNumb.style.transitionDelay = "0.1s";
     secondNumb.style.transform = `translate(0, ${s})`;
@@ -67,10 +67,10 @@ function random() {
             height += "-103";
             break;
     }
-    if(window.matchMedia("(max-width: 600px) and (orientation: portrait)").matches){
-        height=Number(height);
-        height-=2.5;
-        height=String(height);
+    if (window.matchMedia("(max-width: 600px) and (orientation: portrait)").matches) {
+        height = Number(height);
+        height -= 2.5;
+        height = String(height);
         console.log(height);
     }
     return height += "vh";
@@ -80,7 +80,9 @@ function resetAnimation() {
     btnReset.style.animation = "res 1s 1 forwards";
     btnReset.style.display = "block";
 }
-function reset(){
+
+function reset() {
+
     firstNumb.style.transform = `translate(0, -636vh)`;
     secondNumb.style.transform = `translate(0, -636vh)`;
     thirdNumb.style.transform = `translate(0, -636vh)`;
@@ -94,18 +96,18 @@ function reset(){
     thirdNumb.style.color = "white";
     cas.style.borderColor = "white";
     btnReset.style.display = "none";
-    
+
     firstNumb.style.transitionDuration = "0.5s";
     secondNumb.style.transitionDuration = "0.5s";
     thirdNumb.style.transitionDuration = "0.5s";
     cas.style.transitionDuration = "0.5s";
-    
+
     firstNumb.style.transitionDelay = "0s";
     secondNumb.style.transitionDelay = "0s";
     thirdNumb.style.transitionDelay = "0s";
-    
-    function addevent(){
+
+    function addevent() {
         btn.addEventListener("click", spin);
     }
-    setTimeout(addevent,500);
+    setTimeout(addevent, 500);
 }
