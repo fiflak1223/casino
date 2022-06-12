@@ -84,6 +84,11 @@ function reset(){
     firstNumb.style.transform = `translate(0, -636vh)`;
     secondNumb.style.transform = `translate(0, -636vh)`;
     thirdNumb.style.transform = `translate(0, -636vh)`;
+    if (window.matchMedia("(max-width: 600px) and (orientation: portrait)").matches) {
+        firstNumb.style.transform = `translate(0, -638.5vh)`;
+        secondNumb.style.transform = `translate(0, -638.5vh)`;
+        thirdNumb.style.transform = `translate(0, -638.5vh)`;
+    }
     firstNumb.style.color = "white";
     secondNumb.style.color = "white";
     thirdNumb.style.color = "white";
