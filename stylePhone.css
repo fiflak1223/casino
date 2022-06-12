@@ -1,0 +1,100 @@
+@media (max-width: 600px) and (orientation: portrait) {
+    div.circle {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: orangered;
+        width: 33vh;
+        height: 33vh;
+        border-radius: 50%;
+        animation-name: cir;
+        animation-duration: 0.5s;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes cir {
+        0% {
+            transform: translate(-50%, -50%);
+            width: 33vh;
+            height: 33vh;
+        }
+
+        50% {
+            transform: translate(-55%, -55%);
+            width: 35vh;
+            height: 35vh;
+        }
+
+        100% {
+            transform: translate(-50%, -50%);
+            width: 33vh;
+            height: 33vh;
+        }
+    }
+
+    div.darkCircle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        width: 27vh;
+        height: 27vh;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    div.sunbeam {
+        height: 2vh;
+        width: 45vh;
+    }
+
+    div.casino {
+        display: flex;
+        background-color: black;
+        height: 10vh;
+        width: 20vh;
+        border: 3px white solid;
+        border-radius: 5%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        overflow: hidden;
+        transition: 7s;
+    }
+
+    div.first,
+    div.second,
+    div.third {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-basis: 35%;
+        font-size: 10vh;
+        line-height: 13vh;
+        height: 650vh;
+        transform: translate(0, -638.5vh);
+        transition: 7s;
+    }
+
+    button.spin {
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6vh;
+        width: 20vh;
+        height: 13vh
+    }
+
+    button.reset {
+        top: 110%;
+        left: 50%;
+        width: 15vh;
+        height: 6vh;
+    }
+
+}
